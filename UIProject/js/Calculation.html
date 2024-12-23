@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script type="text/javascript">
+         function Add()
+         {
+            var no1=document.getElementById('first').value;
+            var no2=document.getElementById('sec').value;
+           var ans = document.getElementById('ans');
+            var result = parseInt(no1)+parseInt(no2);
+            ans.value=result;
+            // alert("Addition "+result);
+         }
+         function cancel()
+         {
+            alert("Sorry Enter the number");
+         }
+    </script>
+    <style>
+        .container{
+            width: 500px;
+            height: 700px;
+            background-color: rgb(245, 102, 102);
+            box-shadow: -1px 17px 4px 7px lightgray;
+            margin: 100px auto;
+        }
+        input{
+            width: 300px;
+            padding: 10px;
+            margin-top: 30px;
+            margin-left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <input type="text" id="first" placeholder="Enter first number"">
+        </div>
+        <div class="sec">
+              <input type="text" name="" id="sec" placeholder="Enter second number" >
+        </div>
+        <div class="third">
+            <input type="text" name="" id="ans" placeholder="Enter second number" >
+      </div>
+        <input type="text" id="cancel" placeholder="Cancel" onclick="cancel()"><br>
+        <input type="text" name="" id="add" placeholder="Calculate" onclick="Add()">
+    </div>
+</body>
+</html>

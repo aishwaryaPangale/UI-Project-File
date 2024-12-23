@@ -1,0 +1,120 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 60%;
+    margin: auto;
+    min-height: 100px;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px 100px auto auto 60px;
+    grid-template-areas: "logo logo logo logo"
+                          "menu menu menu menu"
+                          "slidebar box1 box2 box3"
+                          "slidebar content content content"
+                          "footer footer footer footer";
+    grid-gap: 5px;
+}
+.logo{
+     background-color: black;
+     grid-area: logo;
+}
+.logo h1{
+    color: white;
+    padding: 10px;
+}
+.menu{
+    background-color: lightcoral;
+    grid-area: menu;
+    display: flex;
+}
+.menu ul li{
+    
+    display: inline-block;
+    
+    list-style-type: none;
+    margin-top: 40px;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+    color: black;
+}
+.slidebar{
+    background-color: lightgoldenrodyellow;
+    grid-area: slidebar;
+}
+.slidebar p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+.box1{
+    background-color: lightseagreen;
+    grid-area: box1;
+}
+.box1 img{
+    width: 100%;
+}
+.box2{
+    background-color: lightpink;
+    grid-area: box2;
+}
+.box2 img{
+    width: 100%;
+}
+.box3{
+    background-color: lightgreen;
+    grid-area: box3;
+}
+.box3 img{
+    width: 100%;
+}
+.content{
+    background-color: rgb(218, 216, 216);
+    grid-area: content;
+}
+.content p
+{
+    padding: 10px;
+    text-align: justify;
+}
+.footer{
+    background-color: black;
+    grid-area: footer;
+}
+.footer p{
+    color: white;
+    line-height: 60px;
+    text-align: center;
+}
+@media only screen and (max-width:795px)
+{
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo "
+                              "menu"
+                              "slidebar"
+                              "box1"
+                              "box2"
+                              "box3"
+                              "content"
+                              "footer";
+        grid-template-rows: 60px auto auto auto auto auto auto 60px;
+    }
+    .menu ul li{
+        display: block;
+        /* flex-direction: column; */
+    }
+    .slidebar p{
+        display: inline-block;
+    }
+    
+}

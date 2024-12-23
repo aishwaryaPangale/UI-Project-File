@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --back_color_white:#fff;
+    --header_color:#333;
+    --input_type_color:#707070;
+    --back_color:purple;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: radial-gradient(yellow,purple);
+}
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+   background-color: var(--back_color_white);
+   padding: 30px;
+   border-radius: 20px;
+}
+.container header{
+    font-size: 1.5rem;
+    color: var(--header_color);
+    font-weight: 500;
+    text-align: center;
+}
+.container .form
+{
+    margin-top: 30px;
+}
+.form .input-box
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input-box label{
+    color: var(--header_color);
+    font-size: 1.5rem;
+}
+.form :where(.input-box input, .slect-box)
+{
+    height: 50px;
+    width: 100%;
+    outline: 0;
+    font-size: 1em;
+    color: var(--input_type_color);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+}
+/* .input-box input:focus
+{
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+} */
+ .form .column
+ {
+    display: flex;
+    column-gap: 10px;
+ }
+ .form .gender-box
+ {
+    margin-top: 10px;
+ }
+ .gender-box h3{
+    color: var(--header_color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+ }
+ .form :where(.gender-option, .gender)
+ {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+ }
+ .form .gender{
+    column-gap: 5px;
+ }
+ .gender input
+ {
+    accent-color:var(--back_color);
+    cursor: pointer;
+ }
+ .gender label{
+    color: var(--header_color);
+ }
+.address :where(input, .slect-box)
+{
+    margin-top: 15px;
+}
+.slect-box select{
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    color: var(--header_color);
+    font-size: 1rem;
+}
+.form button{
+    height: 50px;
+    width: 100%;
+    color: var(--back_color_white);
+    font-size: 1.5rem;
+    border: 0;
+    outline: 0;
+    font-weight: 400;
+    background-color: var(--back_color);
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: rgb(88, 56, 250);
+}
+@media only screen and (max-width:500px)
+{
+    body{
+        padding: 0;
+    }
+    .form .column{
+        flex-wrap: wrap;
+    }
+}

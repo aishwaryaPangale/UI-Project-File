@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            background-image: linear-gradient(130deg,lightslategray,rgb(153, 232, 239));
+        }
+        .container{
+            width: 100%;
+            min-height: 500px;
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            margin: 75px auto;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid #000; */
+            
+            
+        }
+        .box{
+            width: 250px;
+            height: 300px;
+            /* margin: 50px auto; */
+            border: 45px solid lightgray;
+            /* border-right-color: red;
+            border-top-right-radius: 30%;
+            border-top-color: royalblue;
+            border-bottom-left-radius: 30%;
+            border-left-color: red;
+            border-bottom-color: royalblue; */
+            border-image-source: url(images/7p2W.gif);
+            border-image-repeat: stretch;
+            border-image-slice: 190;
+            /* border-image-width: 50px; */
+            overflow:hidden;
+            /* margin-left: 250px; */
+            display: flex;
+            flex-direction: row;
+        }
+        .box p{
+            text-align: justify;
+            padding: 10px;
+        }
+        .box1{
+            width: 250px;
+            height: 300px;
+            /* margin: 50px auto; */
+            border: 45px solid lightgray;
+            /* border-right-color: red;
+            border-top-right-radius: 30%;
+            border-top-color: royalblue;
+            border-bottom-left-radius: 30%;
+            border-left-color: red;
+            border-bottom-color: royalblue; */
+            border-image-source: url(images/R.jfif);
+            border-image-repeat: stretch;
+            border-image-slice: 190;
+            /* border-image-width: 50px; */
+            overflow:hidden;
+            /* border-image-outset: 10px; */
+            display: flex;
+            flex-direction: row;
+           
+        }
+        .box1 p{
+            text-align: justify;
+            padding: 10px;
+        }
+        .box2{
+            width: 250px;
+            height: 300px;
+            /* margin: 50px auto; */
+            border: 45px solid lightgray;
+            border-image-source: url(images/1c50e14d67cd7b4a822bc60baba3aead.jpg);
+            border-image-repeat: stretch;
+            border-image-slice: 60;
+            /* border-image-width: 50px; */
+            overflow:hidden;
+            /* border-image-outset: 5px; */
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .box2 p{
+            text-align: justify;
+            padding: 10px;
+        }
+        .box3{
+            width: 350px;
+            height: 250px;
+            /* margin: 50px auto; */
+            border: 75px solid lightgray;
+        
+            border-image-source: url(images/horsetail_butterfliesW.gif);
+            border-image-repeat: stretch;
+            border-image-slice: 95;
+            /* border-image-width: 50px; */
+            overflow:hidden;
+            /* border-image-outset: 10px; */
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(177, 244, 177);
+        }
+        .box3 p{
+            text-align: justify;
+            padding: 10px;
+            
+        }
+        
+
+        @media only screen and (max-width: 768px)
+          {
+              .container
+              {
+                flex-direction: column;
+                width: 100%;
+              }
+              .container .box{
+                width: 100%;
+              }
+              .container .box1{
+                width: 100%;
+              }
+              .container .box2{
+                width: 100%;
+              }
+              .container .box3{
+                width: 100%;
+              }
+          }  
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim inventore praesentium commodi assumenda quae repellendus. Fugit minus, aliquam minima amet non nostrum quam vero cupiditate possimus officiis. Quisquam atque enim ut saepe assumenda ea magnam expedita nostrum fuga, unde eligendi?</p>  
+        </div>
+        <div class="box1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptates nihil aspernatur vero possimus rem atque maxime placeat rerum cupiditate perspiciatis in odio quasi excepturi est impedit animi natus dignissimos ducimus, modi debitis molestias. Quisquam quae deleniti tempore cum perspiciatis.</p> 
+        </div>
+        <div class="box3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptates nihil aspernatur vero possimus rem atque maxime placeat rerum cupiditate perspiciatis in odio quasi excepturi est impedit animi natus dignissimos ducimus, modi debitis molestias. Quisquam quae deleniti tempore cum perspiciatis.</p> </div>
+        <div class="box2">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim inventore praesentium commodi assumenda quae repellendus. Fugit minus, aliquam minima amet non nostrum quam vero cupiditate possimus officiis. Quisquam atque enim ut saepe assumenda ea magnam expedita nostrum fuga, unde eligendi?</p></div>
+       
+    </div>
+</body>
+</html>

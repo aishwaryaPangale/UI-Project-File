@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfrom</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 300px;
+            height: 270px;
+            margin: 100px auto;
+            border: 1px solid #000;
+            position: relative;
+         }
+         .box h1{
+            z-index: -1;
+         }
+        .text{
+            transition: all 2s ease-in;
+        }
+        .text img:hover{
+            width: 300px;
+            height: 300px;
+            transform:translateX(-200px);
+            position: absolute;
+
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>TUJA MAJA JAMENA TUJA VACHUN KARMENA.</h1>
+        <h1>WISH YOU MANY MANY HAPPY RETURNS OF THE DAY SUSHAMITA</h1>
+           <div class="text">
+            
+            <img src="images/cake11.jfif" alt="">
+           </div>
+    </div>
+</body>
+</html>

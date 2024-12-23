@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ 
+}
+body{
+    background: linear-gradient(to right, #b92b27, #1565c0);
+}
+.box{
+    width: 40%;
+    min-height: 320px;
+    margin: 100px auto;
+    border: 5px solid #000;
+    background-image: url('../images/wallpapersden.com_minimal-hd-landscape_2560x1440.jpg');
+}
+.header{
+    width: 100%;
+    height: 50px;
+}
+.header h1{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+.from-filed{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+}
+label{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+}
+input[type=text]
+{
+    width:400px ;
+    padding: 5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+   
+}
+input[type=password]
+{width:400px ;
+    padding: 5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+input[type=button]
+{
+    width:400px;
+    padding: 5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+input[type=button]:hover{
+    color: red;
+    background-color: blueviolet;
+}
